@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import prefix from 'react-prefixer';
 
 class Resizer extends Component {
 
@@ -9,7 +8,7 @@ class Resizer extends Component {
         return (
             <span
               className={classes.join(' ')}
-              style={prefix(this.props.style) || {}}
+              style={this.props.style || {}}
               onMouseDown={(event) => {
                 this.props.onMouseDown(event);
               }}
