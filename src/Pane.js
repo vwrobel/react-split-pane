@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import prefix from 'react-prefixer';
 
 class Pane extends Component {
     constructor(...args) {
@@ -29,7 +28,7 @@ class Pane extends Component {
         }
 
         return (
-            <div className={classes.join(' ')} style={prefix(style)}>{this.props.children}</div>
+            <div className={classes.join(' ')} style={style}>{this.props.children}</div>
         );
     }
 }
