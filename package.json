@@ -49,10 +49,6 @@
     "surge": "^0.18.0",
     "watchify": "^3.7.0"
   },
-   "gitDependencies": {
-    "private-react-split-pane": "git@private.git.server:user/vwrobel/react-split-pane.git#master",
-    "public-react-split-pane": "https://github.com/vwrobel/react-split-pane.git#master"
-  },
   "scripts": {
     "compile": "babel -d lib/ src/",
     "compile:watch": "babel -w -d lib/ src/",
