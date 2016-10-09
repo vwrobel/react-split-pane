@@ -2,16 +2,16 @@
   "name": "react-split-pane",
   "description": "React split-pane component",
   "main": "index.js",
-  "version": "0.1.49",
+  "version": "0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomkp/react-split-pane"
+    "url": "https://github.com/vwrobel/react-split-pane"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomkp/react-split-pane"
+    "url": "https://github.com/vwrobel/react-split-pane"
   },
-  "homepage": "https://github.com/tomkp/react-split-pane",
+  "homepage": "https://github.com/vwrobel/react-split-pane",
   "author": "tomkp <tom@tomkp.com>",
   "keywords": [
     "react",
@@ -52,6 +52,7 @@
   "scripts": {
     "compile": "babel -d lib/ src/",
     "compile:watch": "babel -w -d lib/ src/",
+    "install": "npm-git install",
     "prepublish": "npm run compile",
     "test": "npm run compile && mochify -R spec",
     "test:watch": "npm run compile:watch & mochify -R spec --watch",
